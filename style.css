@@ -1,0 +1,191 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Amatic SC", cursive;
+  color: white;
+  background-color: black;
+}
+
+body .section1 {
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+body .section1 .restart-btn {
+  padding: 0.7rem 1.2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  background-color: white;
+  font-family: "Amatic SC", cursive;
+  border: none;
+}
+
+body .section1 .text {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+body .section2 {
+  text-align: center;
+  padding: 1em;
+  position: relative;
+}
+
+body .section2::before {
+  content: "";
+  height: 5px;
+  width: 100vw;
+  background-color: white;
+  position: absolute;
+  top: 75%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+body .section2 p,
+body .section2 .text {
+  padding: 1rem 0;
+}
+
+body .section2 p {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+body .section2 .generated {
+  height: 12vh;
+  width: 10vw;
+  font-family: "Amatic SC", cursive;
+  border: none;
+  color: black;
+  font-size: 4rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+body .section2 .slide {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: white;
+  height: 12.1vh;
+  width: 10vw;
+  border: none;
+  color: black;
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+body .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 45vw;
+  height: 40vh;
+  padding: 1rem;
+}
+
+body .left .guess {
+  height: 12vh;
+  width: 10vw;
+  border: 3px solid white;
+  background-color: black;
+  font-family: "Amatic SC", cursive;
+  margin: 1rem;
+  color: white;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+  overflow-y: hidden;
+}
+
+body .left .check {
+  padding: 0.4rem 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border: none;
+  font-family: "Amatic SC", cursive;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+body .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 55vw;
+  height: 40vh;
+  padding: 1rem;
+}
+
+body .right .message {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+body .right .score-board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+body .right .score-board .score,
+body .right .score-board .high-score {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+/*# sourceMappingURL=style.css.map */

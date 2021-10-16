@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- section 1 -->
+    <div class="section1" id="section1">
+        <button class="restart-btn" id="restart-btn">Again!</button>
+        <p class="text" id="text"> Guess between 1 and 10</p>
+    </div>
+    <!-- section 2 -->
+    <div class="section2" id="section2">
+        <p>Guess The Number !</p>
+        <input class="generated" type="number" name="text" id="generated">
+        <p class="slide">?</p>
+    </div>
+    <div class="bottom">
+        <!-- left -->
+        <div class="left">
+            <input class="guess" type="number" name="text" id="guess">
+            <button class="check" id="check">check!</button>
+        </div>
+        <!-- right -->
+        <div class="right" id="right">
+            <div class="guess-result" id="guess-result">
+                <p class="message" id="message">Start guessing...</p>
+            </div>
+            <div class="score-board" id="score-board">
+                <p class="score" id="score">Score: <span class="score-number" id="score-number">10</span> </p>
+                <p class="high-score" id="high-score">Highscore: <span class="highscore-number"
+                        id="highscore-number">0</span> </p>
+            </div>
+        </div>
+    </div>
+    <script src="JavaScript.js"></script>
+</body>
+
+</html>

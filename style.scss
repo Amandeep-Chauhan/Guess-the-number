@@ -1,0 +1,141 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Amatic SC", cursive;
+  color: white;
+  background-color: black;
+  .section1 {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 0;
+    .restart-btn {
+      padding: 0.7rem 1.2rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      background-color: white;
+      font-family: "Amatic SC", cursive;
+      border: none;
+    }
+    .text {
+      font-size: 2rem;
+      font-weight: 700;
+    }
+  }
+  .section2 {
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    &::before {
+      content: "";
+      height: 5px;
+      width: 100vw;
+      background-color: white;
+      position: absolute;
+      top: 75%;
+      transform: translateX(-50%);
+      z-index: -1;
+    }
+    p,
+    .text {
+      padding: 1rem 0;
+    }
+    p {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 0.3rem;
+      margin-bottom: 2rem;
+    }
+    .generated {
+      height: 12vh;
+      width: 10vw;
+      font-family: "Amatic SC", cursive;
+
+      border: none;
+      color: black;
+      font-size: 4rem;
+      font-weight: 600;
+      text-align: center;
+    }
+    .slide {
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      height: 12.1vh;
+      width: 10vw;
+      border: none;
+      color: black;
+      font-size: 3rem;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+  .bottom {
+    display: flex;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45vw;
+    height: 40vh;
+    padding: 1rem;
+    .guess {
+      height: 12vh;
+      width: 10vw;
+      border: 3px solid white;
+      background-color: black;
+      font-family: "Amatic SC", cursive;
+      margin: 1rem;
+      color: white;
+      text-align: center;
+      font-size: 4rem;
+      font-weight: 800;
+      overflow-y: hidden;
+    }
+    .check {
+      padding: 0.4rem 1.5rem;
+      font-size: 2rem;
+      font-weight: 700;
+      border: none;
+      font-family: "Amatic SC", cursive;
+      background-color: white;
+      text-transform: uppercase;
+    }
+  }
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 55vw;
+    height: 40vh;
+    padding: 1rem;
+
+    .message {
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+    .score-board {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      .score,
+      .high-score {
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 3px;
+      }
+    }
+  }
+}
